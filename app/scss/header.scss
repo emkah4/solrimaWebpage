@@ -1,0 +1,71 @@
+@import "mixins.scss";
+
+div.topBar {
+
+    div.content {
+        background-color: $green;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+    
+        .phoneWrapper {
+            @include flex-center;
+            flex-direction: row;
+        }
+    
+        .emailWrapper {
+            @include flex-center;
+            flex-direction: row;
+        }
+    
+        p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: white;
+        }
+    
+        img {
+            height: 23px;
+            width: 23px;
+            margin-right: 10px;
+        }
+    }
+}
+
+header {
+    
+    div.content {
+        @include flex-center;
+        flex-direction: row;
+        width: 100vw;
+        padding: 10px 0;
+        border-bottom: 2px solid green;
+        color: $green;
+        background: rgb(219,219,219);
+        background: linear-gradient(0deg, rgba(219,219,219,1) 0%, rgba(255,255,255,1) 51%);
+        
+        a {
+            height: 80px;
+        }
+        
+        img {
+            width: 220px;
+            height: 80px;
+        }
+    
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            padding-left: 200px;
+    
+            li {
+                padding: 0 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
