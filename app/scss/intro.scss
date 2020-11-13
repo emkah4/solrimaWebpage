@@ -8,24 +8,70 @@ section.intro {
         
         .wrapper {
             width: 85vw;
-            @include flex-center;
-            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 150px 0;
 
             &__text {
-                border: 2px solid black;
                 display: flex;
                 flex-direction: column;
 
+                h2 {
+                    
+                    span {
+                        font-size: 1.9em;
+                        font-weight: 300;
+                    }
+    
+                    span:first-of-type {
+                        color: white;
+                    }
+
+                    span:last-of-type {
+                        color: $green;
+                    }
+                }
+
+                span {
+                    color: white;
+                    margin-bottom: 20px;
+                    font-size: 1.5em;
+                }
+
                 button {
-                    width: 100px;
+                    width: 170px;
                     height: 50px;
+                    background-color: lightgreen;
+                    color: white;
+                    font-family: montserrat;
+                    font-size: 1.3em;
+                    border: none;
+                    border-radius: 0.3em;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
                 }
             }
 
             &__schedule {
                 background-color: rgba(144, 238, 144, 0.6);
-                height: 200px;
-                width: 100px;
+                margin-left: 30px;
+                color: #fff;
+
+                .darbo-laikas {
+                    font-size: 1.6em;
+                    margin: 20px;
+                }
+
+                table {
+                    @include flex-center;
+                    padding: 20px;
+                }
+
+                td {
+                    width: 100px;
+                    padding: 15px;
+                }
             }
         }
     }
