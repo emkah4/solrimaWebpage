@@ -1,0 +1,32 @@
+@import "mixins.scss";
+
+section.intro {
+    width: 100vw;
+    @include flex-center;
+    
+    .content {
+        
+        .wrapper {
+            width: 85vw;
+            @include flex-center;
+            padding: 50px 0;
+
+            &__text {
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+
+                button {
+                    width: 100px;
+                    height: 50px;
+                }
+            }
+
+            &__schedule {
+                background-color: rgba(144, 238, 144, 0.6);
+                height: 200px;
+                width: 100px;
+            }
+        }
+    }
+}
