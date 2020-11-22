@@ -1,7 +1,6 @@
 @import "mixins.scss";
 
 section.intro {
-    width: 100vw;
     @include flex-center;
     
     .content {
@@ -11,7 +10,7 @@ section.intro {
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 150px 0;
+            padding: 130px 0;
 
             &__text {
                 display: flex;
@@ -20,7 +19,7 @@ section.intro {
                 h2 {
                     
                     span {
-                        font-size: 1.9em;
+                        font-size: 2.1em;
                         font-weight: 300;
                     }
     
@@ -42,7 +41,7 @@ section.intro {
                 button {
                     width: 170px;
                     height: 50px;
-                    background-color: lightgreen;
+                    background-color: $green;
                     color: white;
                     font-family: montserrat;
                     font-size: 1.3em;
@@ -50,17 +49,35 @@ section.intro {
                     border-radius: 0.3em;
                     text-transform: uppercase;
                     letter-spacing: 0.05em;
+                    // font-weight: 600;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background-color: white;
+                    border: 2px solid $green;
+                    color: $green; 
                 }
             }
 
             &__schedule {
                 background-color: rgba(144, 238, 144, 0.6);
-                margin-left: 30px;
+                margin-left: 150px;
                 color: #fff;
 
+                .clock-img {
+                    height: 1em;
+                    margin-right: 10px;
+                }
+
                 .darbo-laikas {
+                    @include flex-center;
                     font-size: 1.6em;
-                    margin: 20px;
+                    margin: 40px 20px 0 20px;
+                    text-align: center;
+                    padding-bottom: 15px;
+                    border-bottom: 2px solid white;         
                 }
 
                 table {
@@ -69,8 +86,28 @@ section.intro {
                 }
 
                 td {
-                    width: 100px;
+                    width: 150px;
                     padding: 15px;
+                    font-size: 1.2em;
+                    font-weight: 600;
+                }
+
+                .phone-wrapper {
+                    @include flex-center;
+                    letter-spacing: 0.03em;
+                    transition: 0.3s;
+                    font-size: 1.7em;
+                    margin-bottom: 35px;
+
+                    p {
+                        margin: 0;
+                        font-weight: 300;
+                    }
+                }
+        
+                .phone-img {
+                    height: 1em;
+                    margin-right: 10px;
                 }
             }
         }

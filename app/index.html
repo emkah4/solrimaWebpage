@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Solrima</title>
 </head>
@@ -15,10 +15,6 @@
                     <a href="">
                         <img class="content__logo-img" src="images/logo.png">
                     </a>
-                    <div class="content__phone-wrapper">
-                        <img class="content__phone-img" src="images/phone.svg">
-                        <p>838954281</p>
-                    </div>
                     <nav>
                         <ul>
                             <li>apie mus</li>
@@ -44,7 +40,10 @@
                             </button>
                         </div>
                         <div class="wrapper__schedule">
-                            <p class="darbo-laikas">DARBO LAIKAS</p>
+                            <p class="darbo-laikas">
+                                <img class="clock-img" src="images/clock.svg">
+                                DARBO LAIKAS
+                            </p>
                             <table>
                                 <tr>
                                     <td>I, II, IV, V</td>
@@ -63,12 +62,56 @@
                                     <td>Nedirbame</td>
                                 </tr>
                             </table>
+                            <div class="phone-wrapper">
+                                <img class="phone-img" src="images/phone.svg">
+                                <p>838954281</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     </div>
-        <section></section>
+    <section class="service-cards">
+        <div class="content">
+            <div class="content__card-wrapper" id="card-wrapper">
+                <div class="content__card">
+                    <span class="content__title">
+                        Terapinis dantų gydymas
+                    </span>
+                    <button class="content__daugiau">DAUGIAU</button>
+                </div>
+                <div class="content__card">
+                    <span class="content__title">
+                        Dantų šaknų kanalų gydymas
+                    </span>
+                    <button class="content__daugiau">DAUGIAU</button>
+                </div>
+                <div class="content__card">
+                    <span class="content__title">
+                        Dantų protezavimas
+                    </span>
+                    <button class="content__daugiau">DAUGIAU</button>
+                </div>
+                <div class="content__card">
+                    <span class="content__title">
+                        Chirurgija (dantų šalinimas)
+                    </span>
+                    <button class="content__daugiau">DAUGIAU</button>
+                </div>
+                <div class="content__card">
+                    <span class="content__title">
+                        Burnos higiena
+                    </span>
+                    <button class="content__daugiau">DAUGIAU</button>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+        </div>
+    </section>
+    <script src="javascript/daugiau-info.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 @import "mixins.scss";
 
 header {
-    width: 100vw;
+    max-width: 100vw;
     @include flex-center;
     
     .content {
@@ -16,20 +16,10 @@ header {
         }
         
         p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             font-weight: 600;
             color: $green;
             margin-left: .2em;
-        }
-
-        &__phone-wrapper {
-            @include flex-center;
-            margin-left: 2em;
-        }
-
-        &__phone-img {
-            height: 20px;
-            width: 20px;
         }
         
         &__logo-img {
@@ -45,9 +35,35 @@ header {
             padding-left: 200px;
     
             li {
-                padding: 0 20px;
+                position: relative;
+                margin: 0 20px;
                 text-transform: uppercase;
                 font-weight: bold;
+                transition: all 0.3s;
+
+                &:hover {
+                    color:white;
+                    cursor: pointer;
+                }
+
+                &::after {
+                    content: "";
+                    height: 2px;
+                    width: 0px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    transition: width 0.3s;
+                    opacity: 0;
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                    width: 100%;
+                }
+
+
             }
         }
     }

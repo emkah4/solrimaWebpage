@@ -1,0 +1,46 @@
+@import "mixins.scss";
+
+section.service-cards {
+    .content {
+
+        display: flex;
+        flex-direction: column;
+
+        &__card-wrapper {
+            display: flex;
+        }
+
+        &__card {
+            width: 20vw;
+            height: 200px;
+            background: rgb(58,198,76);
+            background: linear-gradient(266deg, rgba(58,198,76,1) 0%, $green 51%);
+            @include flex-center;
+            flex-direction: column;
+
+        }
+
+        &__title {
+            color: white;
+            margin-bottom: 1.8em;
+            font-size: 1.3em;
+            text-align: center;
+            max-width: 15vw;
+
+        }
+
+        &__daugiau {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            height: 40px;
+            width: 100px;
+            font-family: montserrat;
+            opacity: 0;
+        }
+
+        .spacer {
+            height: 200px;
+        }
+    }
+}
