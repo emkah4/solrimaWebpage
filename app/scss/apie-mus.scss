@@ -1,0 +1,35 @@
+@import "mixins.scss";
+
+section.apie-mus {
+    @include flex-center;
+    background-color: #f9f9f9;
+    .content {
+
+        width: 85vw;
+
+        &__heading-wrapper {
+            @include flex-center;
+        }
+
+        &__heading {
+            padding: 100px 0;
+            font-size: 2em;
+            font-weight: 300;
+            position: relative;
+            color: #333C4E;
+        }
+
+        &__heading::after {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 1px;
+            background-color: #d1d1d1;
+            left: -25%;
+            top: 75%;
+
+        }
+
+        
+    }
+}

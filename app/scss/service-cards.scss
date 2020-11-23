@@ -22,25 +22,10 @@ section.service-cards {
 
         &__title {
             color: white;
-            margin-bottom: 1.8em;
             font-size: 1.3em;
             text-align: center;
             max-width: 15vw;
 
-        }
-
-        &__daugiau {
-            background-color: transparent;
-            border: 2px solid white;
-            color: white;
-            height: 40px;
-            width: 100px;
-            font-family: montserrat;
-            opacity: 0;
-        }
-
-        .spacer {
-            height: 200px;
         }
     }
 }

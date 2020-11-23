@@ -5,7 +5,9 @@ header {
     @include flex-center;
     
     .content {
-        @include flex-center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         flex-direction: row;
         width: 85vw;
         padding: 10px 0;

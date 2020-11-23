@@ -6,9 +6,9 @@ section.intro {
     .content {
         
         .wrapper {
-            width: 85vw;
+            width: 75vw;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: flex-start;
             padding: 130px 0;
 
@@ -63,7 +63,6 @@ section.intro {
 
             &__schedule {
                 background-color: rgba(144, 238, 144, 0.6);
-                margin-left: 150px;
                 color: #fff;
 
                 .clock-img {
