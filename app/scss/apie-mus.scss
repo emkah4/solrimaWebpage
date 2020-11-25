@@ -29,7 +29,44 @@ section.apie-mus {
             top: 75%;
 
         }
-
         
+        &__us-wrapper {
+            display: flex;
+
+            & > div {
+                width: 50vw;
+                @include flex-center;
+            }
+        }
+
+        &__photo-wrapper {
+            flex-direction: column;
+
+            
+        }
+
+        &__photo {
+            background-image: url("images/mantas_p.jpeg");
+            background-repeat: no-repeat;
+            width: 477px;
+            height: 500px;
+        }
+
+        &__desc {
+            background-color: white;
+            width: 477px;
+            height: 50px;
+
+            p {
+                @include flex-center;
+            }
+        }
+
+        &__text-column {
+            p {
+                padding: 60px;
+                margin: 0;
+            }
+        }
     }
 }
