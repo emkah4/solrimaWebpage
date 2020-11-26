@@ -39,27 +39,57 @@ section.apie-mus {
             }
         }
 
-        &__photo-wrapper {
+        .swiper-container {
             flex-direction: column;
-            border: 2px solid black;
+
+            .swiper-button-next {
+                color: rgb(85, 172, 85);
+            }
+
+            .swiper-button-prev {
+                color: rgb(85, 172, 85);
+            }
+
+            .swiper-wrapper {
+
+                .swiper-slide {
+                    @include flex-center;
+                    flex-direction: column;
+                }
+            }
             
         }
 
         &__photo {
-            background-image: url("images/mantas_p.jpeg");
-            background-repeat: no-repeat;
             width: 477px;
             height: 500px;
+            border-top: 2px solid #d1d1d1;
+            border-left: 2px solid #d1d1d1;
+            border-right: 2px solid #d1d1d1;
         }
 
         &__desc {
             background-color: white;
             width: 477px;
-            height: 50px;
+            height: 100px;
+            border-bottom: 2px solid #d1d1d1;
+            border-left: 2px solid #d1d1d1;
+            border-right: 2px solid #d1d1d1;
+            @include flex-center;
+            flex-direction: column;
+
 
             p {
                 @include flex-center;
                 margin: 0;
+                color: #333C4E;
+
+                
+                &:first-of-type {
+                    font-size: 1.4em;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
             }
         }
 

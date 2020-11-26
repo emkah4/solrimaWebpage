@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Solrima</title>
 </head>
@@ -131,18 +132,46 @@
                     </p>
                     </div>
                 </div>
-                <div class="content__photo-wrapper">
-                    <div class="content__photo" id="team-photo"></div>
-                    <div class="content__desc">
-                        <p>Gydytojas odontologas</p>
-                        <p>Mantas Pakalnis</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/mantas_p.jpeg" class="content__photo" id="team-photo"></img>
+                            <div class="content__desc">
+                                <p>Mantas Pakalnis</p>
+                                <p>Gydytojas odontologas</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/greta.jpg" class="content__photo" id="team-photo"></img>
+                            <div class="content__desc">
+                                <p>Greta Bobinaitė</p>
+                                <p>Gydytoja odontologė</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/mantas_n.png" class="content__photo" id="team-photo"></img>
+                            <div class="content__desc">
+                                <p>Mantas Narbutas</p>
+                                <p>Gydytojas odontologas</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/dovile.jpg" class="content__photo" id="team-photo"></img>
+                            <div class="content__desc">
+                                <p>Dovilė Keniausienė</p>
+                                <p>Gydytoja odontologė</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
             <div class="spacer"></div>
         </div>
     </section>
     <section class="komanda"></section>
-    <script src="javascript/team-photo-change-script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="javascript/team-swipe.js"></script>
 </body>
 </html>
