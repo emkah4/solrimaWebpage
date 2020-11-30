@@ -1,0 +1,20 @@
+@import "mixins.scss";
+
+section.tech-cards {
+
+    .content {
+
+        &__card-wrapper {
+            display: flex;
+        }
+        
+        &__card {
+            background-color: blue;
+            width: 20vw;
+            height: 200px;
+            background: rgb(58,198,76);
+            background: linear-gradient(270deg, rgba(58,198,76,1) 0%, $green 51%);
+            @include flex-center;
+        }
+    }
+}
