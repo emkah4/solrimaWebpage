@@ -1,0 +1,28 @@
+@import "mixins.scss";
+
+section.outro {
+    @include flex-center;
+    .content {
+        width: 90vw;
+        display: flex;
+        flex-shrink: 1;
+
+        &__info-block {
+            width: 25vw;
+            
+            &-wrapper {
+
+                padding: 20px;
+
+                img {
+                    width: 200px;
+                }
+
+                .block-title {
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+    }
+}

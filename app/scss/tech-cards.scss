@@ -16,5 +16,38 @@ section.tech-cards {
             background: linear-gradient(270deg, rgba(58,198,76,1) 0%, $green 51%);
             @include flex-center;
         }
+
+        &__logo {
+            @include flex-center;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+        }
+
+        .chirana {
+            background-image: url("images/chirana-white-logo.png");
+        }
+
+        .anthos {
+            background-image: url("images/anthos-white-logo.png");
+        }
+
+        .odontologu-rumai {
+            background-image: url("images/odontologu-rumai-white-logo.png");
+            height: 150px;
+        }
+
+        .nsk {
+            background-image: url("images/nsk-white-logo.png");
+            height: 150px;
+        }
+
+        .threem {
+            background-image: url("images/3M-white-logo.png");
+            width: 150px;
+
+        }
     }
 }
