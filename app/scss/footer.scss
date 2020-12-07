@@ -1,0 +1,17 @@
+@import "mixins.scss";
+
+footer {
+    background-color: #eeeeee;
+    @include flex-center;
+
+    div.content {
+        height: 70px;
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+
+
+}

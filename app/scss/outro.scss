@@ -2,10 +2,12 @@
 
 section.outro {
     @include flex-center;
+    background-color: #f9f9f9;
     .content {
         width: 90vw;
         display: flex;
         flex-shrink: 1;
+        padding: 65px 0;
 
         &__info-block {
             width: 25vw;
@@ -16,10 +18,77 @@ section.outro {
 
                 img {
                     width: 200px;
+                    cursor: pointer;
+                }
+
+                .fb {
+                    width: 30px;
+                    margin-top: 45px;
+                    cursor: pointer;
+                }
+
+                .phrase {
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        height: 1px;
+                        width: 50%;
+                        position: absolute;
+                        background-color: #d1d1d1;
+                        top: 150%;
+                        left: 0;
+                    }
                 }
 
                 .block-title {
-                    font-size: 1.5em;
+                    font-size: 1.4em;
+                    position: relative;
+                    color: #333C4E;
+                    margin-bottom: 3em;
+                    margin-top: 0;
+
+                    &::after {
+                        content: "";
+                        height: 1px;
+                        width: 40px;
+                        position: absolute;
+                        background-color: $green;
+                        top: 170%;
+                        left: 0;
+                    }
+                }
+
+                ul.informacija {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+
+
+                    li {
+                        margin: 15px 0;
+                        cursor: pointer;
+                    }
+                }
+
+                ul.kontaktai {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin: 15px 0;
+                        cursor: pointer;
+
+                        img {
+                            height: 20px;
+                            width: 20px;
+                            margin-right: 10px;
+                        }
+                    } 
                 }
             }
         }
