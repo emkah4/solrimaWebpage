@@ -1,0 +1,17 @@
+@import "mixins.scss";
+
+
+
+@media (max-width: 1220px) {
+    
+    header {
+        
+        #header-list {
+            display: none;
+        }
+
+        #menu-btn {
+            display: flex;
+        }
+    }
+}

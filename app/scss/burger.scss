@@ -1,0 +1,43 @@
+@import "mixins.scss";
+
+header {
+    
+    .menu-btn {
+
+        position: relative;
+        @include flex-center;
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        display: none;
+
+        &__burger {
+            width: 40px;
+            height: 5px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(82, 255, 47, 0.2);
+            transition: all .5s ease-in-out;
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 5px;
+                background-color: white;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(82, 255, 47, 0.2);
+                transition: all .5s ease-in-out;
+            }
+
+            &::before {
+                transform: translateY(-10px);
+            }
+
+            &::after {
+                transform: translateY(10px);
+            }
+        }
+    }
+}

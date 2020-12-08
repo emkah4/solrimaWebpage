@@ -11,17 +11,18 @@
 <body>
     <div class="photo-background">
         <div class="photo-background-dimmer">
-            <header>
+            <header id="header">
                 <div class="content">
-                    <a href="">
-                        <img class="content__logo-img" src="images/logo.png">
-                    </a>
+                    <a href="index.html"><img class="content__logo-img" src="images/logo.png"></a>
                     <nav>
-                        <ul>
-                            <li>pagrindinis</li>
-                            <li>paslaugos</li>
-                            <li>kainoraštis</li>
-                            <li>kontaktai</li>
+                        <div class="menu-btn" id="menu-btn">
+                            <div class="menu-btn__burger"></div>
+                        </div>
+                        <ul class="not-scrolled" id="header-list">
+                            <a href="index.html"><li>pagrindinis</li></a>
+                            <a href="paslaugos.html"><li>paslaugos</li></a>
+                            <a href="kainorastis.html"><li>kainoraštis</li></a>
+                            <a href="kontaktai.html"><li>kontaktai</li></a>
                         </ul>
                     </nav>
                 </div>
@@ -200,7 +201,7 @@
         <div class="content">
             <div class="content__info-block">
                 <div class="content__info-block-wrapper">
-                    <img src="images/logo.png">
+                    <a href="index.html"><img src="images/logo.png"></a>
                     <p class="phrase">Šypsena - svarbiausias žmogaus aksesuaras. Jūsų tobula šypsena - mūsų profesionalių gydytojų komandos tikslas. </p>
                     <a href="https://www.facebook.com/solrimoskarunele"><img class="fb" src="images/facebook.svg"></a>
                 </div>
@@ -209,9 +210,9 @@
                 <div class="content__info-block-wrapper">
                     <p class="block-title">INFORMACIJA</p>
                     <ul class="informacija">
-                        <li><strong>></strong> Paslaugos</li>
-                        <li><strong>></strong> Kainoraštis</li>
-                        <li><strong>></strong> Kontaktai</li>
+                        <a href="paslaugos.html"><li><strong>></strong> Paslaugos</li></a>
+                        <a href="kainorastis.html"><li><strong>></strong> Kainoraštis</li></a>
+                        <a href="kontaktai.html"><li><strong>></strong> Kontaktai</li></a>
                     </ul>
                 </div>
             </div>
@@ -241,6 +242,6 @@
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="javascript/team-swipe.js"></script>
-    <script src="javascript/counter.js"></script>
+    <script src="javascript/scroll-script.js"></script>
 </body>
 </html>
