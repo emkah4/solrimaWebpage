@@ -3,11 +3,14 @@ var header = document.getElementById("header");
 var list = document.getElementById("header-list");
 
 window.onscroll = () => {
-  headerFunc();
+  // if(window.innerWidth > 1220) {
+    headerFunc();
   if (window.scrollY > 1200 && !firstScroll) {
     increaser();
     firstScroll = true; 
   }
+// }
+  
 };
 
 function increaser(){
@@ -23,11 +26,13 @@ function increaser(){
 
 function headerFunc() {
     if(window.scrollY > 150) {
-      header.style.backgroundColor = "white";
+      header.style.backgroundColor = "rgba(255, 255, 255, 1)";
       list.classList.remove("not-scrolled");
       list.classList.add("scrolled");
     } else {
-      header.style.backgroundColor = "transparent";
+      if(!navBarOpen) {
+        header.style.backgroundColor = "transparent";
+      }
       list.classList.add("not-scrolled");
       list.classList.remove("scrolled");
     }

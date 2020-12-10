@@ -5,6 +5,10 @@
 @media (max-width: 1220px) {
     
     header {
+
+        div.content {
+            width: 95vw;
+        }
         
         #header-list {
             display: none;
@@ -12,6 +16,7 @@
 
         #menu-btn {
             display: flex;
+            margin-right: 20px;
         }
     }
 }
