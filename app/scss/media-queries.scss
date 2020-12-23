@@ -1,5 +1,9 @@
 @import "mixins.scss";
 
+@media (max-width: 1130px) {
+    
+}
+
 
 
 @media (max-width: 1220px) {
@@ -18,5 +22,124 @@
             display: flex;
             margin-right: 20px;
         }
+    }
+
+    #us-wrapper {
+        flex-direction: column;
+
+        #text-column {
+            width: 100%;
+        }
+
+        #swiper-container {
+            width: 80%;
+            margin-top: 100px;
+        }
+    }
+
+    #intro-wrapper {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    #intro-wrapper {
+        @include flex-center;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    #schedule {
+        margin-top: 8em;
+
+        #td {
+            width: 30vw;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    #map {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    section.tech-cards {
+        div.content {
+
+            &__card-wrapper {
+
+                div.content__card {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 804px) {
+    section.outro {
+        div.content {
+            flex-direction: column;
+        }
+    }
+
+    section.service-cards {
+        #card-wrapper {
+            font-size: 0.8em;
+            flex-direction: column;
+            
+            div.content__card {
+                width: 100vw;
+                background: linear-gradient(180deg, rgba(58,198,76,1) 0%, $green 51%);
+                height: 70px;
+
+                span.content__title {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 700px) {
+    #swiper-container {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #intro-wrapper {
+        @include flex-center;
+        flex-direction: column;
+        
+        #heading {
+            font-size: 1.2em;
+        }
+
+        #bottom-text {
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    #intro-wrapper {
+        @include flex-center;
+        flex-direction: column;
+        
+        #heading {
+            font-size: 0.9em;
+        }
+
+        #bottom-text {
+            font-size: 1.2em;
+        }
+    }
+
+    #patirtis {
+        font-size: 0.8em;
     }
 }
