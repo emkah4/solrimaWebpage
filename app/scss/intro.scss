@@ -1,5 +1,7 @@
 @import "mixins.scss";
 
+//main page
+
 section.intro {
     @include flex-center;
     
@@ -107,6 +109,120 @@ section.intro {
                     height: 1em;
                     margin-right: 10px;
                 }
+            }
+        }
+    }
+}
+
+//kontaktai
+
+section.intro {
+
+    .content {
+
+        @include flex-center;
+
+        &__kontaktai-wrapper {
+            @include flex-center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        &__kontaktai-heading {
+
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+
+            span:nth-of-type(1) {
+                color: white;
+            }
+
+            span:nth-of-type(2) {
+                color: $green;
+            }
+        }
+
+        &__kontaktai-svg {
+            img {
+                height: 4em;
+                width: 4em;
+            }
+        }
+    }
+}
+
+//paslaugos
+
+section.intro {
+
+    .content {
+
+        @include flex-center;
+
+        &__paslaugos-wrapper {
+            @include flex-center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        &__paslaugos-heading {
+
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+
+            span:nth-of-type(1) {
+                color: white;
+            }
+
+            span:nth-of-type(2) {
+                color: $green;
+            }
+        }
+
+        &__paslaugos-svg {
+            img {
+                height: 4em;
+                width: 4em;
+            }
+        }
+    }
+}
+
+//kainorastis
+
+section.intro {
+
+    .content {
+
+        @include flex-center;
+
+        &__kainorastis-wrapper {
+            @include flex-center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        &__kainorastis-heading {
+
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+
+            span:nth-of-type(1) {
+                color: white;
+            }
+
+            span:nth-of-type(2) {
+                color: $green;
+            }
+        }
+
+        &__kainorastis-svg {
+            img {
+                height: 4em;
+                width: 4em;
             }
         }
     }

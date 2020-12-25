@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paslaugos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Solrima</title>
 </head>
 <body>
-    <a href="index.html">back</a>
+    <div class="photo-background">
+        <div class="photo-background-dimmer">
+            <header id="header">
+                <div class="content">
+                    <a href="index.html"><img class="content__logo-img" src="images/logo.png"></a>
+                    <nav>
+                        <div class="menu-btn" id="menu-btn">
+                            <div class="menu-btn__burger" id="burger"></div>
+                        </div>
+                        <ul class="not-scrolled" id="header-list">
+                            <a href="index.html"><li>pagrindinis</li></a>
+                            <a href="paslaugos.html"><li>paslaugos</li></a>
+                            <a href="kainorastis.html"><li>kainoraštis</li></a>
+                            <a href="kontaktai.html"><li>kontaktai</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="drop-down">
+                <ul>
+                    <a href="index.html"><li>pagrindinis</li></a>
+                    <a href="paslaugos.html"><li>paslaugos</li></a>
+                    <a href="kainorastis.html"><li>kainoraštis</li></a>
+                    <a href="kontaktai.html"><li class="last">kontaktai</li></a>
+                </ul>
+            </div>
+            <section class="intro">
+                <div class="content">
+                    <div class="content__paslaugos-wrapper">
+                        <div class="content__paslaugos-heading">
+                            <span>Solrimos</span>
+                            <span>Paslaugos</span>
+                        </div>
+                        <div class="content__paslaugos-svg">
+                            <img src="images/tooth.svg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="javascript/scroll-script.js"></script>
+    <script src="javascript/burger-script.js"></script>
 </body>
 </html>
