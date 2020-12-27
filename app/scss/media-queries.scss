@@ -1,10 +1,57 @@
 @import "mixins.scss";
 
-@media (max-width: 1130px) {
-    
+// kontaktai
+
+@media (max-width: 1391px) {
+    #contact-list-wrapper {
+        flex-direction: column;
+
+        .contact-list.dos {
+            margin: 0;
+        }
+    }
 }
 
+@media (max-width: 1160px) {
+    #schedule-side {
+        padding: 40px;
+    }
+}
 
+@media (max-width: 1000px) {
+
+    #map-side {
+        width: 100vw;
+    }
+
+    #schedule-side {
+        width: 100vw;
+
+        div.logo-wrapper {
+
+            img {
+                width: 300px;
+            }
+        }
+    }
+
+    #contacts {
+        div.content {
+            display: flex;
+            flex-direction: column;
+            height: unset;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    #content__kontaktai-heading {
+        span {
+            font-size: .8em;
+        }
+    }
+}
+//main page
 
 @media (max-width: 1220px) {
     

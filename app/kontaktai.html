@@ -38,23 +38,23 @@
             <section class="intro">
                 <div class="content">
                     <div class="content__kontaktai-wrapper">
-                        <div class="content__kontaktai-heading">
+                        <div class="content__kontaktai-heading" id="content__kontaktai-heading">
                             <span>Susisiekite</span>
                             <span>Su mumis</span>
                         </div>
-                        <div class="content__kontaktai-svg">
-                            <img src="images/phone-book.svg">
-                        </div>
                     </div>
                 </div>
+                <a href="#contacts">
+                    <div class="scroll-down"></div>
+                </a>
             </section>
         </div>
     </div>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="content">
-            <div class="map-side">
+            <div class="map-side" id="map-side">
                 <p class="title uno">Kontaktai</p>
-                <div class="contact-list-wrapper">
+                <div class="contact-list-wrapper" id="contact-list-wrapper">
                     <ul class="contact-list uno">
                         <li><img src="images/dash.svg"> Solrimos karūnėlė, UAB</li>
                         <li><img src="images/location.svg">Utenio aikštė 20, Utena</li>
@@ -69,7 +69,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.1759663169173!2d25.599048915890684!3d55.49445888048501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd57e45460414d%3A0x46d79020b1ed978a!2sUtenio%20a.%2020%2C%20Utena%2028248!5e0!3m2!1slt!2slt!4v1607340244370!5m2!1slt!2slt" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
-            <div class="schedule-side">
+            <div class="schedule-side" id="schedule-side">
                 <div class="schedule-wrapper">
                     <p class="darbo-laikas">
                         DARBO LAIKAS
@@ -94,12 +94,76 @@
                     </table>
                 </div>
                 <div class="logo-wrapper">
-                    <img src="images/logo.png">
+                    <img src="images/logo.png" class="smaller-logo">
                     <p>Šypsena - svarbiausias žmogaus aksesuaras. Jūsų tobula šypsena - mūsų profesionalių gydytojų komandos tikslas.</p>
                 </div>
             </div>
         </div>
     </section>
+    <section class="tech-cards">
+        <div class="content">
+            <div class="content__card-wrapper" id="card-wrapper">
+                <div class="content__card">
+                    <div class="content__logo chirana"></div>
+                </div>
+                <div class="content__card">
+                    <div class="content__logo nsk"></div>
+                </div>
+                <div class="content__card">
+                    <div class="content__logo odontologu-rumai"></div>
+                </div>
+                <div class="content__card">
+                    <div class="content__logo anthos"></div>
+                </div>
+                <div class="content__card">
+                    <div class="content__logo threem"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="outro">
+        <div class="content">
+            <div class="content__info-block">
+                <div class="content__info-block-wrapper">
+                    <a href="index.html"><img src="images/logo.png"></a>
+                    <p class="phrase">Šypsena - svarbiausias žmogaus aksesuaras. Jūsų tobula šypsena - mūsų profesionalių gydytojų komandos tikslas. </p>
+                    <a href="https://www.facebook.com/solrimoskarunele"><img class="fb" src="images/facebook.svg"></a>
+                </div>
+            </div>
+            <div class="content__info-block">
+                <div class="content__info-block-wrapper">
+                    <p class="block-title">INFORMACIJA</p>
+                    <ul class="informacija">
+                        <a href="paslaugos.html"><li><strong>></strong> Paslaugos</li></a>
+                        <a href="kainorastis.html"><li><strong>></strong> Kainoraštis</li></a>
+                        <a href="kontaktai.html"><li><strong>></strong> Kontaktai</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="content__info-block">
+                <div class="content__info-block-wrapper">
+                    <p class="block-title">KONTAKTAI</p>
+                    <ul class="kontaktai">
+                        <li><img src="images/dash.svg"> Solrimos karūnėlė, UAB</li>
+                        <li><img src="images/location.svg">Utenio aikštė 20, Utena</li>
+                        <li><img src="images/email.svg">solrimoskarunele@gmail.com</li>
+                        <li><img src="images/phone-green.svg">838954281</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content__info-block" id="map">
+                <div class="content__info-block-wrapper">
+                    <p class="block-title">KUR MUS RASTI</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.1759663169173!2d25.599048915890684!3d55.49445888048501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd57e45460414d%3A0x46d79020b1ed978a!2sUtenio%20a.%2020%2C%20Utena%2028248!5e0!3m2!1slt!2slt!4v1607340244370!5m2!1slt!2slt" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="content">
+            <div class="copyright">© UAB SOLRIMOS KARŪNĖLĖ. Visos teisės saugomos.</div>
+        </div>
+    </footer>
     <script src="javascript/scroll-script.js"></script>
     <script src="javascript/burger-script.js"></script>
 </body>

@@ -5,6 +5,7 @@ section.contacts {
         @include flex-center;
         color: #333C4E;
         font-weight: 300;
+        height: 115vh;
 
         .map-side {
             width: 60vw;
@@ -22,7 +23,7 @@ section.contacts {
 
                 &::after {
                     content: "";
-                    height: 1px;
+                    height: 2px;
                     width: 50px;
                     position: absolute;
                     background-color: $green;
@@ -63,7 +64,7 @@ section.contacts {
 
             .map-wrapper {
                 iframe {
-                    width: 90%;
+                    width: 100%;
                     height: 300px;
                 }
 
@@ -73,7 +74,7 @@ section.contacts {
         .schedule-side {
             width: 40vw;
             background-color: #f9f9f9;
-            height: 846px;
+            height: 100%;
             padding: 80px;
 
             .schedule-wrapper {
