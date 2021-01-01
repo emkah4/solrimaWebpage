@@ -50,6 +50,20 @@
             font-size: .8em;
         }
     }
+
+    #map-side {
+        padding: 15px;
+
+        .title.uno {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #contact-list-wrapper {
+        font-size: 0.8em;
+    }
 }
 //main page
 
