@@ -1,15 +1,20 @@
 @import "mixins.scss";
 
+#kainorastis-heading {
+    text-align: center;
+}
+
 section.kainorastis {
     @include flex-center;
+
     .content {
         width: 85vw;
         padding: 50px 0;
         font-size: 1.5em;
         text-transform: uppercase;
+
         .cell {
             border: 1px solid black;
-            padding: 15px;
             margin-top: 15px;
             display: flex;
             flex-direction: column;
@@ -21,11 +26,21 @@ section.kainorastis {
 
             .title-wrapper {
                 display: flex;
+                padding: 15px;
+
+                p {
+                    margin: 0;
+                    margin-left: 8px;
+                    display: flex;
+                    align-items: center;
+                }
 
                 .plus-block {
                     margin-top: 3px;
-                    width: 25px;
-                    height: 25px;
+                    min-width: 25px;
+                    min-height: 25px;
+                    max-width: 25px;
+                    max-height: 25px;
                     background-color: #333c4e;
                     @include flex-center;
 
@@ -86,6 +101,7 @@ section.kainorastis {
                 width: 100%;
                 border: none;
                 text-transform: initial;
+                padding: 5px;
                 tr {
                     width: 90%;
                     

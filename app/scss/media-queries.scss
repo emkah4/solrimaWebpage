@@ -1,5 +1,59 @@
 @import "mixins.scss";
 
+// kainorastis 
+
+@media (max-width: 590px) {
+
+    section.kainorastis {
+        div.content {
+            font-size: 1em;
+        }
+    }
+}
+
+// paslaugos
+
+@media (max-width: 480px) {
+    #paslaugos-heading {
+        text-align: center;
+    }
+}
+
+@media (max-width: 690px) {
+    section.paslaugos {
+        div.content {
+            div.service-wrapper {
+                flex-direction: column;
+                @include flex-center;
+                div.service-button {
+                    width: 90%;
+                    border: 2px solid $green;
+                    border-bottom: none;
+
+                    &:last-of-type {
+                        border-bottom: 2px solid $green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    section.paslaugos {
+        div.content {
+            .service-desc {
+                .wrapper__contact {
+                    &::after {
+                        width: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // kontaktai
 
 @media (max-width: 1391px) {
@@ -26,12 +80,11 @@
 
     #schedule-side {
         width: 100vw;
+        padding-bottom: 50px;
 
         div.logo-wrapper {
 
-            img {
-                width: 300px;
-            }
+            display: none;
         }
     }
 
@@ -46,9 +99,7 @@
 
 @media (max-width: 680px) {
     #content__kontaktai-heading {
-        span {
-            font-size: .8em;
-        }
+            text-align: center;     
     }
 
     #map-side {
@@ -110,6 +161,17 @@
         padding-bottom: 100px;
     }
 
+    section.apie-mus {
+        #us-wrapper {
+
+            #text-column {
+                .wrapper {
+                    padding: 0 10px;
+                }                
+            }
+        }
+    }
+    
     #schedule {
         margin-top: 8em;
 
@@ -196,7 +258,7 @@
         }
 
         #bottom-text {
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
     }
 

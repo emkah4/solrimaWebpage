@@ -55,6 +55,7 @@ document.getElementById("higiena").addEventListener("click", () => {
     terapija.classList.remove("active");
 })
 
+
 function removeClass () {
     allCells.forEach(item => {
         item.classList.remove("active");

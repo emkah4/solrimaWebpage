@@ -25,6 +25,7 @@ section.service-cards {
             font-size: 1.3em;
             text-align: center;
             padding: 10px;
+            @include flex-center;
 
             &:hover {
                 cursor: pointer;
